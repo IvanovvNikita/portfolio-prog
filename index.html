@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио по программированию</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            margin-top: auto;
+        }
+
+        .contact-icons a {
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-icons a:hover {
+            color: #ddd;
+        }
+
+        .work-links a {
+            font-size: 1.1rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .work-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .about-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .work-link {
+            font-size: 1.1rem;
+            color: #495057;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .work-link:hover {
+            color: #007bff; /* Синий цвет на наведение */
+            transform: scale(1.05); /* Легкое увеличение */
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Тень для выделения */
+        }
+
+        .work-link:focus {
+            outline: none; /* Убираем обводку при фокусе */
+            box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.6); /* Тень при фокусе */
+        }
+
+        .works-info {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #495057;
+            text-align: center;
+        }
+
+        .work-section {
+            margin-bottom: 0;        
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1>Портфолио по дисциплине "Программирование"</h1>
+        </div>
+    </header>
+
+    <section id="about-me" class="py-5" style="background: linear-gradient(to bottom, #f8f9fa, #e9ecef);">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: #495057;">Обо мне</h2>
+            <div class="row">
+                <!-- Блок 1: Разработчик -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card shadow-lg rounded-lg about-card" style="height: 100%; border: none; background-color: #ffffff;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-2x text-primary"></i>
+                            <h5 class="card-title mt-2">Образование</h5>
+                            <p class="card-text">Я студент РГПУ им А.И. Герцена направления Информатика и Вычислительная техника. Основным языком программирования при обучении был python.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Блок 2: Машинное обучение -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card shadow-lg rounded-lg about-card" style="height: 100%; border: none; background-color: #ffffff;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-2x text-warning"></i>
+                            <h5 class="card-title mt-2">Машинное обучение</h5>
+                            <p class="card-text">Я увлечён машинным обучением и ищу методы использования его в рамках разработки игр.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Блок 3: Разработка игр, Unity и C# -->
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card shadow-lg rounded-lg about-card" style="height: 100%; border: none; background-color: #ffffff;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-gamepad fa-2x text-danger"></i>
+                            <h5 class="card-title mt-2">Разработка игр</h5>
+                            <p class="card-text">Я работаю с Unity и C#, создавая игры и интерактивные приложения, а также изучаю новые технологии в сфере разработки игр.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="works" class="py-5" style="background: linear-gradient(to bottom right, #6c757d, #adb5bd);">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white">Мои работы</h2>
+            <div class="works-info">
+                <p>Все работы выполнены в рамках обучения по дисциплине "Программирование".</p>
+            </div>
+            <div class="accordion" id="workAccordion">
+                <!-- Семестр 4 -->
+                <div class="accordion-item work-section">
+                    <h2 class="accordion-header" id="headingSemester4">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemester4" aria-expanded="true" aria-controls="collapseSemester4">
+                            Семестр 4
+                        </button>
+                    </h2>
+                    <div id="collapseSemester4" class="accordion-collapse collapse" aria-labelledby="headingSemester4" data-bs-parent="#workAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="./sem4/lr1/main.py" class="work-link">Лабораторная работа 1</a></li>
+                                <li><a href="works/sem4/lr2/index.html" class="work-link">Лабораторная работа 2</a></li>
+                                <li><a href="works/sem4/lr3/index.html" class="work-link">Лабораторная работа 3</a></li>
+                                <li><a href="works/sem4/lr4/index.html" class="work-link">Лабораторная работа 4</a></li>
+                                <li><a href="works/sem4/lr5/index.html" class="work-link">Лабораторная работа 5</a></li>
+                                <li><a href="works/sem4/lr6/index.html" class="work-link">Лабораторная работа 6</a></li>
+                                <li><a href="works/sem4/lr7/index.html" class="work-link">Лабораторная работа 7</a></li>
+                                <li><a href="works/sem4/lr8/index.html" class="work-link">Лабораторная работа 8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Семестр 5 -->
+                <div class="accordion-item work-section">
+                    <h2 class="accordion-header" id="headingSemester5">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemester5" aria-expanded="false" aria-controls="collapseSemester5">
+                            Семестр 5
+                        </button>
+                    </h2>
+                    <div id="collapseSemester5" class="accordion-collapse collapse" aria-labelledby="headingSemester5" data-bs-parent="#workAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="works/sem5/lr1/index.html" class="work-link">Лабораторная работа 1</a></li>
+                                <li><a href="works/sem5/lr2/index.html" class="work-link">Лабораторная работа 2</a></li>
+                                <li><a href="works/sem5/lr3/index.html" class="work-link">Лабораторная работа 3</a></li>
+                                <li><a href="works/sem5/lr4/index.html" class="work-link">Лабораторная работа 4</a></li>
+                                <li><a href="works/sem5/lr5/index.html" class="work-link">Лабораторная работа 5</a></li>
+                                <li><a href="works/sem5/lr6/index.html" class="work-link">Лабораторная работа 6</a></li>
+                                <li><a href="works/sem5/lr7/index.html" class="work-link">Лабораторная работа 7</a></li>
+                                <li><a href="works/sem5/lr8/index.html" class="work-link">Лабораторная работа 8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                            <!-- Семестр 6 -->
+                <div class="accordion-item work-section">
+                    <h2 class="accordion-header" id="headingSemester6">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemester6" aria-expanded="false" aria-controls="collapseSemester6">
+                            Семестр 6
+                        </button>
+                    </h2>
+                    <div id="collapseSemester6" class="accordion-collapse collapse" aria-labelledby="headingSemester6" data-bs-parent="#workAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="works/sem6/lr1/index.html" class="work-link">Лабораторная работа 1</a></li>
+                                <li><a href="works/sem6/lr2/index.html" class="work-link">Лабораторная работа 2</a></li>
+                                <li><a href="works/sem6/lr3/index.html" class="work-link">Лабораторная работа 3</a></li>
+                                <li><a href="works/sem6/lr4/index.html" class="work-link">Лабораторная работа 4</a></li>
+                                <li><a href="works/sem6/lr5/index.html" class="work-link">Лабораторная работа 5</a></li>
+                                <li><a href="works/sem6/lr6/index.html" class="work-link">Лабораторная работа 6</a></li>
+                                <li><a href="works/sem6/lr7/index.html" class="work-link">Лабораторная работа 7</a></li>
+                                <li><a href="works/sem6/lr8/index.html" class="work-link">Лабораторная работа 8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Семестр 7 -->
+                <div class="accordion-item work-section">
+                    <h2 class="accordion-header" id="headingSemester7">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemester7" aria-expanded="false" aria-controls="collapseSemester7">
+                            Семестр 7
+                        </button>
+                    </h2>
+                    <div id="collapseSemester7" class="accordion-collapse collapse" aria-labelledby="headingSemester7" data-bs-parent="#workAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><a href="works/sem7/lr1/index.html" class="work-link">Лабораторная работа 1</a></li>
+                                <li><a href="works/sem7/lr2/index.html" class="work-link">Лабораторная работа 2</a></li>
+                                <li><a href="works/sem7/lr3/index.html" class="work-link">Лабораторная работа 3</a></li>
+                                <li><a href="works/sem7/lr4/index.html" class="work-link">Лабораторная работа 4</a></li>
+                                <li><a href="works/sem7/lr5/index.html" class="work-link">Лабораторная работа 5</a></li>
+                                <li><a href="works/sem7/lr6/index.html" class="work-link">Лабораторная работа 6</a></li>
+                                <li><a href="works/sem7/lr7/index.html" class="work-link">Лабораторная работа 7</a></li>
+                                <li><a href="works/sem7/lr8/index.html" class="work-link">Лабораторная работа 8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer с разделением -->
+    <footer class="bg-dark text-white py-4" style="background: linear-gradient(to top, #343a40, #495057);">
+        <div class="container text-center">
+            <p>&copy; 2024 Cheloupavek</p>
+            <div class="social-icons">
+                <a href="https://github.com/IvanovvNikita" class="text-info mx-2"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://t.me/chelouk_pavek" class="text-info mx-2"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                <a href="mailto:nbgrhenjq@gmail.com" class="text-info mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
