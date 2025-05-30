@@ -66,12 +66,12 @@ function showModule(moduleId) {
             </div>
             <div id="sem7" class="semester-content">
                 <ul class="list-unstyled">
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/lr1" class="work-link" target="_blank">Лабораторная работа 1. Введение в Django.</a></li>
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/lr2" class="work-link" target="_blank">Лабораторная работа 2. Применение форм в Django. Аутентификация и регистрация пользователей.</a></li>
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/lr3" class="work-link" target="_blank">Лабораторная работа 3. Django REST Framework: (микро)сервисы. </a></li>
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/lr4" class="work-link" target="_blank">Лабораторная работа 4. Простые паттерны интеграции с Apache Camel </a></li>
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/pr1" class="work-link" target="_blank">Практическая работа 1. Настройка OAuth 2.0 авторизации в Django приложении. </a></li>
-                    <li><a href="https://github.com/IvanovvNikita/portfolio-prog/tree/main/sem7/pr2" class="work-link" target="_blank">Практическая работа 2. RESTful веб-приложение на Spring Boot.</a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-lr3" class="work-link" target="_blank">Лабораторная работа 1-3. Введение в Django.</a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-lr4" class="work-link" target="_blank">Лабораторная работа 4. Применение форм в Django. Аутентификация и регистрация пользователей.</a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-lr5" class="work-link" target="_blank">Лабораторная работа 5. Django REST Framework: (микро)сервисы. </a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-pr1" class="work-link" target="_blank">Практическая работа 1. Настройка OAuth 2.0 авторизации в Django приложении. </a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-pr2" class="work-link" target="_blank">Практическая работа 2. RESTful веб-приложение на Spring Boot.</a></li>
+                    <li><a href="https://github.com/IvanovvNikita/prog7-pr3" class="work-link" target="_blank">Практическая работа 3. Реализация очереди задач. RabbitMQ </a></li>
                 </ul>
             </div>
         `;
